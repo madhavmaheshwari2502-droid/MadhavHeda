@@ -16,16 +16,10 @@
 
         body, html {
             height: 100%;
-            overflow: hidden;
+            overflow-x: hidden;
             scroll-behavior: smooth;
         }
-
-        .scroll-container {
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-        }
-
+        
         section {
             height: 100vh;
             scroll-snap-align: start;
@@ -39,7 +33,7 @@
         .bg-gradient-radial {
             background-image: radial-gradient(circle, #290d2e 0%, #0a0a0a 70%);
         }
-
+        
         .work-section-container {
             width: 100%;
             overflow-x: auto;
@@ -275,6 +269,5 @@
             generateButton.addEventListener('click', generateTaglines);
         });
     </script>
-
 </body>
 </html>
