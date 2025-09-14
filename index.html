@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhav Heda - Creative Copywriter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --accent-purple: #8b5cf6;
+            --accent-orange: #f59e0b;
+            --text-light: #f3f4f6;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            position: relative;
+        }
+        .bg-gradient-radial {
+            background-image: radial-gradient(circle, #290d2e 0%, #0a0a0a 70%);
+        }
+
+        .work-section-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            padding: 2rem 0;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .work-card {
+            min-width: 80vw;
+            margin-right: 2rem;
+            scroll-snap-align: center;
+        }
+        @media (min-width: 768px) {
+            .work-card {
+                min-width: 40vw;
+            }
+        }
+        @media (min-width: 1024px) {
+            .work-card {
+                min-width: 30vw;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white font-serif">
+
+    <div class="scroll-container">
+        <!-- Home Section -->
+        <section id="home" class="bg-gradient-radial flex-col text-center">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold font-['Playfair_Display'] text-white">Madhav Heda</h1>
+            <h2 class="text-xl md:text-3xl lg:text-4xl mt-2 mb-4 font-bold font-['Montserrat'] text-gray-300 tracking-wider">CREATIVE COPYWRITER</h2>
+            <p class="text-xl md:text-2xl mt-8 max-w-4xl px-4 font-['Montserrat'] leading-snug text-gray-400">
+                "I write copy that makes you stop scrolling, smile at a hoarding, and remember a brand long after the ad is gone.”
+            </p>
+            <div class="mt-12 flex space-x-4">
+                <a href="#work" class="px-8 py-3 bg-purple-600 text-white font-bold rounded-full transition-transform transform hover:scale-105 shadow-lg">See My Work</a>
+                <a href="#about" class="px-8 py-3 border-2 border-white text-white font-bold rounded-full transition-transform transform hover:scale-105">Learn More About Me</a>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="bg-gray-950 flex-col">
+            <h2 class="text-4xl md:text-6xl font-bold font-['Playfair_Display'] text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-orange-400 mb-10">The Work</h2>
+            <div class="work-section-container">
+                <!-- Dharma Productions -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">Dharma Productions</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Entertainment</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            From cult classics to glam web shows, I’ve been part of campaigns that kept fans talking. I’ve written posts people screenshot and send to their group chats.
+                        </p>
+                    </div>
+                </div>
+                <!-- JioCinema -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">JioCinema</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Entertainment</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            Handled campaigns that stretched from cartoons to dragons. Let's just say I've gone from "dracarys" to "dora."
+                        </p>
+                    </div>
+                </div>
+                <!-- Real Estate -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">Real Estate</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Real Estate</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            I've written copy that sells dreams, not just flats. Pam Infrastructure, Arihant Superstructures, Atlantaa Pvt Ltd, Midtown, and more.
+                        </p>
+                    </div>
+                </div>
+                <!-- SEO & Content -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">SEO & Content</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Copy & Content</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            I mix keyword strategy with storytelling so blogs don’t read like SEO copy — they read like conversations that Google also happens to love.
+                        </p>
+                    </div>
+                </div>
+                <!-- Fashion & Lifestyle -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">Fashion & Lifestyle</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Lifestyle</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            Social campaigns that spoke the language of individuality. Made comfort look chic and chic feel effortless.
+                        </p>
+                    </div>
+                </div>
+                <!-- Healthcare -->
+                <div class="work-card rounded-3xl overflow-hidden bg-gray-800 shadow-2xl transition-transform transform hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold font-['Playfair_Display'] mb-2">Healthcare</h3>
+                        <p class="text-purple-300 font-semibold mb-4">Healthcare</p>
+                        <p class="text-gray-400 font-['Montserrat'] leading-relaxed">
+                            Nobody smiles at dental ads… until now. We turned a clinic into a brand people actually liked engaging with.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-900 flex-col">
+            <h2 class="text-4xl md:text-6xl font-bold font-['Playfair_Display'] text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-purple-400 mb-10">The Writer's Story</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start max-w-5xl px-4 space-y-8 md:space-y-0 md:space-x-12">
+                <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-gray-700">
+                    <img src="https://raw.githubusercontent.com/madhavmaheshwari2502-droid/Madhav-Heda/main/WhatsApp%20Image%202025-09-14%20at%202.05.26%20PM.jpeg" alt="Madhav Heda" class="w-full h-full object-cover">
+                </div>
+                <div class="text-lg md:text-xl font-['Montserrat'] text-gray-300 text-center md:text-left">
+                    <p class="mb-6 leading-relaxed">
+                        I'm Madhav Heda, a copywriter who blends creativity with strategy. I've written for 25+ brands across entertainment, real estate, fashion, healthcare, and startups.
+                    </p>
+                    <div class="relative p-6 bg-gray-800 rounded-3xl shadow-xl border border-gray-700">
+                        <h3 class="text-2xl md:text-3xl font-bold font-['Playfair_Display'] text-orange-400 mb-2">They Never Knew I Was Burning</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            My debut book is a raw and heartfelt collection of words that proves my craft always comes back to one thing: writing that makes you feel. Whether it’s selling homes or launching shows, my craft is about human connection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with AI -->
+        <section id="contact" class="bg-gray-950 flex-col">
+            <h2 class="text-4xl md:text-6xl font-bold font-['Playfair_Display'] text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-400 mb-10">Let's Create Together</h2>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 font-['Montserrat'] text-center max-w-3xl">
+                I’m always open to new projects and collaborations. Whether you need a full campaign or just a few sticky taglines, let’s talk.
+            </p>
+            <div class="w-full max-w-2xl p-8 bg-gray-800 rounded-3xl shadow-2xl border border-gray-700">
+                <h3 class="text-3xl font-bold font-['Playfair_Display'] text-white mb-4 text-center">✨ See the Magic Happen</h3>
+                <p class="text-gray-400 mb-4 text-center">
+                    Enter a short description of your brand to generate a few custom taglines.
+                </p>
+                <textarea
+                    id="brand-description"
+                    placeholder="e.g., A sustainable coffee brand that helps farmers"
+                    class="w-full h-32 bg-gray-900 text-white px-4 py-3 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500 transition-colors resize-none mb-4"
+                ></textarea>
+                <button
+                    id="generate-button"
+                    class="px-8 py-3 bg-teal-500 text-black font-bold rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-400 w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                    Generate Taglines
+                </button>
+                <div id="loading-indicator" class="mt-4 text-center text-gray-400 hidden">
+                    Generating...
+                </div>
+                <div id="error-message" class="mt-4 text-center text-red-400 hidden"></div>
+                <div id="taglines-container" class="mt-6 space-y-4"></div>
+            </div>
+            <div class="mt-8">
+                <a href="mailto:your_email@example.com" class="px-8 py-4 bg-white text-black font-bold rounded-full shadow-2xl transition-transform transform hover:scale-105">
+                    Send Me an Email
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const generateButton = document.getElementById('generate-button');
+            const brandDescriptionInput = document.getElementById('brand-description');
+            const taglinesContainer = document.getElementById('taglines-container');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const errorMessage = document.getElementById('error-message');
+
+            const generateTaglines = async () => {
+                const brandDescription = brandDescriptionInput.value;
+                if (!brandDescription.trim()) {
+                    errorMessage.textContent = 'Please enter a brand description.';
+                    errorMessage.classList.remove('hidden');
+                    taglinesContainer.innerHTML = '';
+                    return;
+                }
+
+                loadingIndicator.classList.remove('hidden');
+                errorMessage.classList.add('hidden');
+                generateButton.disabled = true;
+                taglinesContainer.innerHTML = '';
+
+                const prompt = `Act as a world-class copywriter. Generate three catchy, creative, and memorable taglines for a brand based on the following description: "${brandDescription}". Do not include any extra text, headings, or numbering in the output. Just return the three taglines, with each one on a new line.`;
+                
+                const payload = {
+                    contents: [{ parts: [{ text: prompt }] }],
+                    generationConfig: {
+                        responseMimeType: "text/plain"
+                    }
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const generatedText = result?.candidates?.[0]?.content?.parts?.[0]?.text || 'No taglines generated. Please try again with a different description.';
+                    const newTaglines = generatedText.split('\n').filter(line => line.trim() !== '');
+
+                    newTaglines.forEach(tagline => {
+                        const taglineElement = document.createElement('div');
+                        taglineElement.className = 'text-xl font-["Montserrat"] text-white bg-gray-700 p-6 rounded-xl shadow-md transition-transform transform hover:scale-105';
+                        taglineElement.textContent = tagline;
+                        taglinesContainer.appendChild(taglineElement);
+                    });
+
+                } catch (err) {
+                    console.error('Error generating taglines:', err);
+                    errorMessage.textContent = 'Failed to generate taglines. Please try again.';
+                    errorMessage.classList.remove('hidden');
+                } finally {
+                    loadingIndicator.classList.add('hidden');
+                    generateButton.disabled = false;
+                }
+            };
+
+            generateButton.addEventListener('click', generateTaglines);
+        });
+    </script>
+
+</body>
+</html>
